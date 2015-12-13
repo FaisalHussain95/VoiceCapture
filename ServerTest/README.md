@@ -9,7 +9,7 @@
  - The IP address of your PC should be entered in the CallHeader.java file located in the Android App folder Main activity
 *Please use Android Studio to avoid problems during process*
 
-**Runing the listener**
+**Running the listener**
 -----------------------
 *For windows Only - Should also work on linux*
 
