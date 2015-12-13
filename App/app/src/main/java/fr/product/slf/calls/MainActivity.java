@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textViewDetectState;
     private Button buttonToggleDetect;
-    private Button buttonExit;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonExit = (Button) findViewById(R.id.buttonExit);
+        Button buttonExit = (Button) findViewById(R.id.buttonExit);
         buttonExit.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
