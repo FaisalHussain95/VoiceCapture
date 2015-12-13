@@ -21,7 +21,7 @@ import android.media.MediaRecorder;
 /**
  * Created by faisa on 08/12/2015.
  */
-public class CallHelper {
+class CallHelper {
     /*
      * Init service
      */
