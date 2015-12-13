@@ -18,6 +18,7 @@ http://developer.android.com/sdk/index.html
  - Outgoing Call: detect when call is reached
  - Fix Warning issue: `W/Resources: Converting to string`
  - Improve memory usage
+
 **Known Bugs**
  - We can hear the mic sound but we just selected the DownLink sound
 http://developer.android.com/reference/android/media/MediaRecorder.AudioSource.html
