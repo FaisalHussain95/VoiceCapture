@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Roger Voice !</string>
+    <string name="inGoingCall_msg">Appel entrant: </string>
+    <string name="inHookCall_msg">Décroché: </string>
+    <string name="outGoingCall_msg">Appel sortant: </string>
+    <string name="endCall_msg">Fin de l\'appel</string>
+    <string name="turnOffService">Désactiver le service</string>
+    <string name="ServiceOn_msg">Service Actif !</string>
+    <string name="turnOnService">Activer le service</string>
+    <string name="ServiceOff_msg">Service Inactif</string>
+    <string name="exit_msg">Quittez</string>
+</resources>
