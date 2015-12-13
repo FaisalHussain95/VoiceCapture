@@ -4,3 +4,20 @@ Actually the RogerVoice is using an intern VoIP server service to make their app
 
 ---
 Our objective is to make an android application that could stream voicecall audio to the RogerVoice App.
+
+----
+# Android Studio & SDK
+We used Android Studio to create this app.
+> This app have **INTERNET** permission but it was added just for **testing purpose** and should be removed since the app have **to be an offline Service**.
+
+The ServerTest folder is a Java Listener App capable of listening streamed audio from our app, just for testing.
+
+----
+# Try It !
+http://developer.android.com/sdk/index.html
+
+#Links
+http://developer.android.com/reference/android/media/MediaRecorder.html
+http://developer.android.com/guide/topics/ui/themes.html
+http://developer.android.com/reference/android/app/Service.html
+http://stackoverflow.com/questions/15349987/stream-live-android-audio-to-server%3E
