@@ -22,3 +22,6 @@
  
  6. Now you can run the Android App Service and start calling and testing.
  The call audio should be streamed to your PC audio system.
+
+>Thanks to @user1729564 on StackOverflow
+>http://stackoverflow.com/questions/15349987/stream-live-android-audio-to-server%3E
