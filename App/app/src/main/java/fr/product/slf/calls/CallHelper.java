@@ -22,7 +22,7 @@ import android.media.MediaRecorder;
  * Created by faisa on 08/12/2015.
  */
 class CallHelper {
-    /*
+    /**
      * Init service
      */
     public byte[] buffer;
@@ -31,10 +31,10 @@ class CallHelper {
 
     AudioRecord recorder;
 
-    private int sampleRate = 44100 ; // 44100 for music
+    private int sampleRate = 44100 ; // 44100 for HQ
     private int channelConfig = AudioFormat.CHANNEL_IN_MONO;
     private int audioFormat = AudioFormat.ENCODING_PCM_16BIT;
-    int minBufSize = 3840;//AudioRecord.getMinBufferSize(sampleRate, channelConfig, audioFormat);
+    int minBufSize = 3840; //AudioRecord.getMinBufferSize(sampleRate, channelConfig, audioFormat);
     private boolean status = false;
 
 
@@ -46,14 +46,15 @@ class CallHelper {
         public void onCallStateChanged(int state, String incomingNumber) {
             switch (state) {
                 case TelephonyManager.CALL_STATE_RINGING:
-                    // called when someone is ringing to this phone
 
+                    // called when someone is ringing to this phone
                     Toast.makeText(ctx,
                             ctx.getString(R.string.inGoingCall_msg)+incomingNumber,
                             Toast.LENGTH_SHORT).show();
                     break;
 
                 case TelephonyManager.CALL_STATE_OFFHOOK:
+
                     // When call is running
                     status = true;
                     startStreaming();
@@ -63,6 +64,7 @@ class CallHelper {
                     break;
 
                 case TelephonyManager.CALL_STATE_IDLE:
+
                     // When call end
                     if (status) {
                         status = false;
@@ -86,9 +88,9 @@ class CallHelper {
 
         @Override
         public void onReceive(Context context, Intent intent) {
+            // When call is outgoing
+
             String number = intent.getStringExtra(Intent.EXTRA_PHONE_NUMBER);
-            //status = true;
-            //startStreaming();
             Toast.makeText(ctx,
                     ctx.getString(R.string.outGoingCall_msg)+number,
                     Toast.LENGTH_SHORT).show();
@@ -129,7 +131,6 @@ class CallHelper {
     }
     public void startStreaming() {
 
-        Log.d("VS", "SLF");
         Thread streamThread = new Thread(new Runnable() {
 
             @Override
@@ -143,7 +144,7 @@ class CallHelper {
                     Log.d("VS","Buffer created of size " + minBufSize);
                     DatagramPacket packet;
 
-                    final InetAddress destination = InetAddress.getByName("192.168.1.24");
+                    final InetAddress destination = InetAddress.getByName("192.168.1.24"); // change to localhost
                     Log.d("VS", "Address retrieved");
 
 
