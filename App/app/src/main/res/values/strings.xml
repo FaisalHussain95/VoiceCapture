@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Roger Voice !</string>
+    <string name="app_name">VoiceCapture</string>
     <string name="inGoingCall_msg">Appel entrant: </string>
     <string name="inHookCall_msg">Décroché: </string>
     <string name="outGoingCall_msg">Appel sortant: </string>
